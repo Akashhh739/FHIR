@@ -1,0 +1,35 @@
+# Synthea source (large Java project — clone separately with scripts/01_setup_synthea.sh)
+synthea/
+
+# Exported Parquet data (large binary files, download with scripts/01_setup_synthea.sh)
+gold_patient_features_parquet/
+silver_conditions_parquet/
+silver_encounters_parquet/
+*.parquet
+
+# Databricks CLI config (contains workspace token)
+~/.databrickscfg
+.databrickscfg
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Screenshots and build artifacts
+*.png
+*.apk
